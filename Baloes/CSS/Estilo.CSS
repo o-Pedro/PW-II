@@ -1,0 +1,29 @@
+div{
+    float: left;
+    width: auto;
+    height: 500px;
+    background-color: #ffffff;
+    border: solid 1px #a2a2a2;
+    margin-left: 5px;
+}
+span{
+    font-size: 40px;
+}
+#cronotab{
+    width: 140px;
+    height: 130px;
+}
+#cronotd{
+    background-image: url(../Imagens/cronometro.png);
+    text-align: center;
+}
+#cronometro{
+    color: red;
+    font-size: 30px;
+}
+#cenario{
+    float: left;
+    width: 600px;
+    background-image: url(../Imagens/cenario.png);
+    background-position: bottom;
+}

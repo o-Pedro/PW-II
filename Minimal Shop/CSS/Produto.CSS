@@ -1,0 +1,100 @@
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("../Imagens/Fundo_Produto.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #fundo_formulario {
+        position: fixed;
+        width: 30%;
+        height: 100%;
+        background-color: #F8F0E3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 3px solid black;
+    }
+    a{
+        margin-bottom: 735px;
+        margin-left: 360px;
+        position: absolute;
+    }
+    #logo {
+        width: 70%;
+    }
+    #titulo {
+        margin-bottom: 750px;
+        margin-right: 90px;
+        width: 43%;
+        position: absolute;
+    }
+    hr {
+        position: absolute;
+        border: none;
+        height: 4px;
+        background-color: black;
+        width: 50%;
+        border-radius: 2px;
+        margin-bottom: 570px;
+    }
+    label {
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 405px;
+        margin-bottom: 3px;
+        align-items: center;
+        justify-content: center;
+    }
+    input {
+        padding: 5px;
+        width: 400px;
+        border-radius: 10px;
+        border: 2px solid black;
+        font-size: 16px;
+    }
+    form {
+        margin-top: 220px;
+        margin-left: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    #botoes_formulario {
+        width: 18%;
+        border-radius: 6px;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        padding: 3px;
+        font-weight: bold;
+    }
+    #botoes_formulario:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        border: 2px solid black;
+    }
+    #descricao {    
+    height: 80px;
+    width: 405px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    resize: none;
+    font-size: 16px;
+}
+    #categoria {
+        padding: 5px;
+        width: 415px;
+        border-radius: 10px;
+        border: 2px solid black;
+        font-size: 16px;
+    }
+    #botoes_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 8px;
+        margin-top: 5px;
+    }
