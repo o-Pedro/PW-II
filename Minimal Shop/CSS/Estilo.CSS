@@ -103,9 +103,9 @@ button:hover {
     display: flex;
     align-items: center;
 }
-#cadastro_produto2 {
+#cadastro_funcionario {
     margin-bottom: 230px;
-    margin-left: 15px;
+    margin-right: 10px;
     color: white;
     text-align: center;
     font-size: 32px;
