@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `animal` (
   `idade` int NOT NULL DEFAULT '0',
   `porte` varchar(50) NOT NULL DEFAULT '0',
   `proprietario` varchar(50) NOT NULL DEFAULT '0',
+  `imagem` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`codigo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
