@@ -1,7 +1,6 @@
 <?php
-    include_once 'conexao.php'; //Pega tudo do outro PHP
+    include_once 'conexao.php';
 
-    //Recebendo dados do formulário
     $nome       = $_POST["nome_produto"] ?? '';
     $categoria  = $_POST["categoria_produto"] ?? '';
     $cor        = $_POST["cor_produto"] ?? '';
@@ -10,12 +9,10 @@
     $preco      = $_POST["preco_produto"] ?? '';
     $quantidade = $_POST["quantidade_produto"] ?? '';
 
-    //Verifica se os campos obrigatórios estão preenchidos
     if(empty($nome) || empty($categoria) || empty($cor) || empty($marca) || empty($descricao) || empty($preco) || empty($quantidade)){
         die("Erro: Todos os campos são obrigatórios.");
     }
 
-    //Insere os dados no banco de dados
     $stmt = $sql->prepare("INSERT INTO produto (nome, categoria, cor, marca, descricao, preco, quantidade) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssdi", $nome, $categoria, $cor, $marca, $descricao, $preco, $quantidade);
 

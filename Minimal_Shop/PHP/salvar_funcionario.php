@@ -1,7 +1,6 @@
 <?php
-    include_once 'conexao.php'; //Pega tudo do outro PHP
+    include_once 'conexao.php';
 
-    //Recebendo dados do formulário
     $cpf             = $_POST["cpf"] ?? '';
     $nome            = $_POST["nome_funcionario"] ?? '';
     $telefone        = $_POST["telefone"] ?? '';
@@ -10,12 +9,10 @@
     $funcao          = $_POST["funcao"] ?? '';
     $salario         = $_POST["salario"] ?? '';
 
-    //Verifica se os campos obrigatórios estão preenchidos
     if(empty($cpf) || empty($nome) || empty($telefone) || empty($data_nascimento) || empty($cep) || empty($funcao) || empty($salario)){
         die("Erro: Todos os campos são obrigatórios.");
     }
 
-    //Insere os dados no banco de dados
     $stmt = $sql->prepare("INSERT INTO funcionario (cpf, nome, telefone, data_nascimento, cep, funcao, salario) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssssd", $cpf, $nome, $telefone, $data_nascimento, $cep, $funcao, $salario);
 

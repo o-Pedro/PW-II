@@ -23,7 +23,7 @@ USE `minimal_shop`;
 CREATE TABLE IF NOT EXISTS `funcionario` (
   `cpf` char(11) NOT NULL DEFAULT '',
   `nome` varchar(100) NOT NULL DEFAULT '',
-  `telefone` int NOT NULL,
+  `telefone` bigint NOT NULL DEFAULT '0',
   `data_nascimento` date NOT NULL,
   `cep` char(8) NOT NULL DEFAULT '',
   `funcao` varchar(50) NOT NULL DEFAULT '',
